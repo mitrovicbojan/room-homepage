@@ -88,14 +88,19 @@ li {
 }
 .header-img {
   width: 100%;
+  display: block;
 }
 
 .text-box {
-  padding: 7rem;
+  padding: 15rem 7rem 0 7rem;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   flex-shrink: 2;
+}
+
+.text-box p {
+  color: hsl(0, 0%, 63%);
 }
 span {
   display: block;
@@ -108,4 +113,32 @@ span {
 p {
   font-size: 2rem;
   line-height: 1.2;
+}
+
+.about {
+  display: flex;
+}
+
+.about-box {
+  padding: 5rem 3rem 0 3rem;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  flex-shrink: 6;
+}
+
+.header-about {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  margin-bottom: 2rem;
+}
+.about-img {
+  width: 100%;
+  display: block;
+}
+
+.about-text {
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 63%);
 }
