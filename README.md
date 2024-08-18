@@ -4,7 +4,7 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images\room-screenshot.png)
 
 ### Links
 
