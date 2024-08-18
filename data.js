@@ -1,5 +1,3 @@
-//need to add require() for images to display in react app
-
 const slides = [
   {
     id: 1,
@@ -52,7 +50,7 @@ prev.addEventListener("click", function () {
     // Loop back to the last image if at the beginning
     indexImg = slides.length;
   }
-  console.log(indexImg);
+
   renderImages(); // Re-render the image box content
 });
 

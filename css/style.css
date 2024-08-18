@@ -1,12 +1,5 @@
 /*
 
-### Colors Primary
-
-- Dark Gray: hsl(0, 0%, 63%)
-- Black: hsl(0, 0%, 0%)
-- White: hsl(0, 0%, 100%)
-- Very Dark Gray: hsl(0, 0%, 27%)
-
 ## Typography
     Font size: 12px
     - Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
@@ -17,6 +10,13 @@
     nav font - 1.2rem
     padding bottom links 1.2rem
 */
+
+:root {
+  --color-dark-gray: hsl(0, 0%, 63%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-very-dark-gray: hsl(0, 0%, 27%);
+}
 
 *,
 *::before,
@@ -42,11 +42,13 @@ header {
   padding: 2rem;
   gap: 4rem;
   height: 7rem;
-  margin-left: 2rem;
+  margin-left: 4rem;
   position: fixed;
   z-index: 1;
   transition: all 0.2s ease-in;
 }
+
+/***NAVBAR***/
 
 ul {
   display: flex;
@@ -65,13 +67,13 @@ li {
   padding: 1rem;
   text-decoration: none;
   position: relative;
-  color: #eee;
+  color: var(--color-white);
 }
 
 .nav-link::after {
   content: "";
   position: absolute;
-  background: aquamarine;
+  background: var(--color-white);
   height: 3px;
   bottom: 0;
   width: 0;
@@ -102,6 +104,8 @@ li {
   cursor: pointer;
 }
 
+/****SLIDER*****/
+
 .hero-box {
   display: flex;
   justify-content: flex-start;
@@ -127,13 +131,12 @@ li {
   flex: 40%;
 }
 
-.header-primary {
-  display: block;
-}
-
 .text-box p {
   display: block;
+  color: var(--color-dark-gray);
+  padding: 3rem 5rem 0 5rem;
 }
+
 .arrow-button {
   display: flex;
   align-items: center;
@@ -148,7 +151,7 @@ li {
   outline: none;
   background-color: transparent;
   cursor: pointer;
-  color: black;
+  color: var(--color-black);
 }
 
 .arrow-button svg {
@@ -157,12 +160,11 @@ li {
 
 .arrow-button:hover,
 .arrow-button svg:hover {
-  color: hsl(0, 0%, 63%);
-  fill: hsl(0, 0%, 63%);
+  color: var(--color-dark-gray);
+  fill: var(--color-dark-gray);
 }
 .btn-div {
   position: absolute;
-  /* bottom: -3px; */
   bottom: 0;
   right: 0;
   transform: translate(100%, 0);
@@ -176,35 +178,27 @@ li {
   padding: 0;
   height: 8rem;
   width: 8.5rem;
-  background-color: black;
+  background-color: var(--color-black);
   letter-spacing: 0;
   line-height: 0;
   cursor: pointer;
   transition: all 0.3s ease-in;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30%;
 }
 
 .prev {
   background-image: url(./../images/icon-angle-left.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 30%;
 }
 
 .next {
   background-image: url(./../images/icon-angle-right.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 30%;
 }
 
 .next:hover,
 .prev:hover {
-  background-color: hsl(0, 0%, 63%);
-}
-
-.text-box p {
-  color: hsl(0, 0%, 63%);
-  padding: 3rem 5rem 0 5rem;
+  background-color: var(--color-dark-gray);
 }
 
 .header-primary {
@@ -219,6 +213,8 @@ p {
   line-height: 1.2;
 }
 
+/*****ABOUT********/
+
 .about {
   display: flex;
   flex-grow: 1;
@@ -227,9 +223,7 @@ p {
 .about-box {
   padding: 5rem 3rem 0 3rem;
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
-  /* flex-shrink: 10; */
   flex: 100%;
 }
 
@@ -252,6 +246,6 @@ p {
 
 .about-text {
   font-size: 1.6rem;
-  color: hsl(0, 0%, 63%);
+  color: var(--color-dark-gray);
   width: 100%;
 }
