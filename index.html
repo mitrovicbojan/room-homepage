@@ -25,11 +25,14 @@
   <body>
     <main>
       <header>
+        <a class="hamburger" id="hamburger"><svg width="20" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z" fill="#FFF" fill-rule="evenodd"/></svg></a>
+        <a class="hamburger-close" id="close"><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z" fill="#000" fill-rule="evenodd" opacity=".201"/></svg></a>
         <div class="logo">
-          <img src="./images/logo.svg" alt="logo" />
+          <a class="logo-link" href="#"><img src="./images/logo.svg" alt="logo" /></a>
         </div>
-        <nav>
-          <ul>
+        
+        <nav class="navbar">
+          <ul class="navbar-items">
             <li><a href="##" class="nav-link">home</a></li>
             <li><a href="##" class="nav-link">shop</a></li>
             <li><a href="##" class="nav-link">about</a></li>
@@ -38,13 +41,14 @@
         </nav>
       </header>
       <div class="hero-box">
-        <div class="img-box">
-          <img class="header-img" src="./images/desktop-image-hero-1.jpg" />
+        <div class="img-box" id="img-box">
+          <!-- <img class="header-img" src="./images/desktop-image-hero-1.jpg" /> -->
+          <div class="btn-div"><a href="#" class="prev" id="prev"></a><a class="next" id="next"></a></div>
         </div>
 
         <div class="text-box">
           <h1 class="header-primary">
-            <span>Discover innovative</span><span>ways to decorate</span>
+            Discover innovative ways to decorate
           </h1>
           <p>
             We provide unmatched quality, comfort, and style for property owners
@@ -56,7 +60,7 @@
           <button class="arrow-button">
             Shop now <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg></span>
           </button>
-          <div class="btn-div"><a class="prev"></a><a class="next"></a></div>
+          
         </div>
       </div>
       <div class="about">
@@ -78,6 +82,7 @@
           <img class="about-img" src="./images/image-about-light.jpg" />
         </div>
       </div>
+      
     </main>
     <!-- Discover innovative ways to decorate We provide unmatched quality, comfort,
     and style for property owners across the country. Our experts combine form
@@ -105,5 +110,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
+    <script src="app.js"></script>
+    <script src="data.js"></script>
   </body>
 </html>
