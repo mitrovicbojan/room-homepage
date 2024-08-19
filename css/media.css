@@ -59,7 +59,7 @@
   }
   .arrow-button {
     font-size: 1.4rem;
-    padding: 0.8rem;
+    margin-left: 3rem;
   }
 }
 
@@ -80,10 +80,6 @@
   .text-box p {
     padding: 3rem;
     font-size: 2rem;
-  }
-
-  .arrow-button {
-    margin-left: 2rem;
   }
 
   .about {

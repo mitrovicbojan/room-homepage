@@ -26,6 +26,8 @@ let indexImg = 1;
 let imgBox = document.getElementById("img-box");
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
+let slideTitle = document.getElementById("header-primary");
+let slideDesc = document.getElementById("text-box-description");
 
 // Initial rendering of the images
 function renderImages() {
@@ -34,6 +36,8 @@ function renderImages() {
   // If there's already an image, replace it; otherwise, create a new one
   if (existingImg) {
     existingImg.src = slides[indexImg - 1].image; // Update the source of the existing image
+    slideTitle.innerText = slides[indexImg - 1].title;
+    slideDesc.innerText = slides[indexImg - 1].description;
   } else {
     imgBox.insertAdjacentHTML(
       "afterbegin",
@@ -60,6 +64,6 @@ next.addEventListener("click", function () {
     // Loop back to the first image if at the end
     indexImg = 1;
   }
-  console.log(indexImg);
-  renderImages(); // Re-render the image box content
+
+  renderImages();
 });

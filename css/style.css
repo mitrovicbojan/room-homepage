@@ -140,12 +140,12 @@ li {
 .arrow-button {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 26rem;
   font-size: 2rem;
   letter-spacing: 5px;
   text-transform: uppercase;
-  padding: 1rem;
+  padding: 1rem 0;
   margin: 3rem 0 0 5rem;
   border: none;
   outline: none;
