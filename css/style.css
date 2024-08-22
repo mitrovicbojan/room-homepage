@@ -61,7 +61,8 @@ li {
   display: flex;
 }
 
-.nav-link {
+.nav-link:link,
+.nav-link:visited {
   align-self: center;
   font-size: 2rem;
   padding: 1rem;
@@ -156,10 +157,12 @@ li {
 
 .arrow-button svg {
   fill: transparent;
+  transition: fill 0.3s ease;
+  margin-left: 2rem;
 }
 
 .arrow-button:hover,
-.arrow-button svg:hover {
+.arrow-button:hover svg path {
   color: var(--color-dark-gray);
   fill: var(--color-dark-gray);
 }

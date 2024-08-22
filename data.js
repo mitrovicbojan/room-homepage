@@ -24,6 +24,7 @@ const slides = [
 
 let indexImg = 1;
 let imgBox = document.getElementById("img-box");
+let txtBox = document.getElementById("text-box");
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
 let slideTitle = document.getElementById("header-primary");
@@ -32,16 +33,37 @@ let slideDesc = document.getElementById("text-box-description");
 // Initial rendering of the images
 function renderImages() {
   let existingImg = imgBox.querySelector(".header-img");
-
+  let existingTitle = txtBox.querySelector(".header-primary");
+  let existingText = txtBox.querySelector(".text-box-description");
   // If there's already an image, replace it; otherwise, create a new one
   if (existingImg) {
     existingImg.src = slides[indexImg - 1].image; // Update the source of the existing image
-    slideTitle.innerText = slides[indexImg - 1].title;
-    slideDesc.innerText = slides[indexImg - 1].description;
   } else {
     imgBox.insertAdjacentHTML(
       "afterbegin",
       `<img class="header-img" src=${slides[indexImg - 1].image} />`
+    );
+  }
+
+  if (existingText) {
+    existingText.innerHTML = slides[indexImg - 1].description;
+  } else {
+    txtBox.insertAdjacentHTML(
+      "afterbegin",
+      `<p class="text-box-description" id="text-box-description">${
+        slides[indexImg - 1].description
+      }</p>`
+    );
+  }
+
+  if (existingTitle) {
+    existingTitle.innerHTML = slides[indexImg - 1].title;
+  } else {
+    txtBox.insertAdjacentHTML(
+      "afterbegin",
+      `<h1 class="header-primary" id="header-primary">${
+        slides[indexImg - 1].title
+      }</h1>`
     );
   }
 }
