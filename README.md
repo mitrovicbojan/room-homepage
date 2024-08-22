@@ -9,7 +9,7 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live URL](https://room-homepage-frontendm.netlify.app/)
 
 ### Built with
 
