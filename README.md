@@ -8,7 +8,7 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/room-homepage-O9Idjcbt7m)
 - Live Site URL: [live URL](https://room-homepage-frontendm.netlify.app/)
 
 ### Built with
